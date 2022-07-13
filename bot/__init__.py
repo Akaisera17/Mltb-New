@@ -153,6 +153,10 @@ except:
     pass
 try:
     fx = getConfig('EXTENSION_FILTER')
+    if len(fx) > 0:
+        fx = fx.split()
+        for x in fx:
+            EXTENSION_FILTER.add(x.strip().lower())
 except:
     pass
 try:

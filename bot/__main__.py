@@ -173,6 +173,10 @@ help_string = f'''
 /{BotCommands.RestartCommand}: Restart and update the bot
 
 /{BotCommands.LogCommand}: Get a log file of the bot. Handy for getting crash reports
+
+/{BotCommands.ShellCommand}: Run commands in Shell (Only Owner)
+
+/{BotCommands.ExecHelpCommand}: Get help for Executor module (Only Owner)
 '''
 
 def bot_help(update, context):

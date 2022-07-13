@@ -20,7 +20,7 @@ from .helper.telegram_helper.button_build import ButtonMaker
 from .modules import authorize, list, cancel_mirror, mirror_status, mirror, clone, watch, shell, eval, delete, count, leech_settings, search, rss, qbselect
 
 def stats(update, context):
-    currentTime = get_readable_time(time.time() - botStartTime)
+    currentTime = get_readable_time(time() - botStartTime)
     total, used, free = shutil.disk_usage('.')
     total = get_readable_file_size(total)
     used = get_readable_file_size(used)
